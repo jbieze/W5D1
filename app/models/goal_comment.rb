@@ -1,15 +1,14 @@
 # == Schema Information
 #
-# Table name: goals
+# Table name: goal_comments
 #
 #  id         :integer          not null, primary key
+#  body       :text             not null
+#  author_id  :integer          not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  user_id    :string           not null
 #
 
-FactoryGirl.define do
-  factory :goal do
-    
-  end
+class GoalComment < ApplicationRecord
+
 end
